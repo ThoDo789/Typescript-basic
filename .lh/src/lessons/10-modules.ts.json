@@ -1,0 +1,26 @@
+{
+    "sourceFile": "src/lessons/10-modules.ts",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1631853015312,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1631857190486,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,4 @@\n-import {Employee} from \"./09-class\"\n+// import {Employee} from \"./09-class\"\n \n-const nam = new Employee ('son',18,true)\n\\ No newline at end of file\n-console.log(nam.print())\n+// const nam = new Employee ('son',18,true)\n+// console.log(nam.print())\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1631857310872,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,4 @@\n-// import {Employee} from \"./09-class\"\n+import {Employee} from \"./09-class\"\n \n-// const nam = new Employee ('son',18,true)\n\\ No newline at end of file\n-// console.log(nam.print())\n+const nam = new Employee ('son',18,true)\n+console.log(nam.print())\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1631853015312,
+            "name": "Commit-0",
+            "content": "import {Employee} from \"./09-class\"\n\nconst nam = new Employee ('son',18,true)\nconsole.log(nam.print())"
+        }
+    ]
+}

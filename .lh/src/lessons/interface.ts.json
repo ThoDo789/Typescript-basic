@@ -1,0 +1,18 @@
+{
+    "sourceFile": "src/lessons/interface.ts",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1631857135731,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1631857135731,
+            "name": "Commit-0",
+            "content": "interface Person{\nname: string,\nage: number,\nspeak(lang:string):void,\nspent(amount: number):number\n}\n\nconst kevin :Person = {\n  name:'kenvin',\n  age:12, \n  speak(text:string):void {\n    console.log(text)\n  },\n  spent(amt:number) {\n    return amt\n  }\n}\nconsole.log(kevin)"
+        }
+    ]
+}

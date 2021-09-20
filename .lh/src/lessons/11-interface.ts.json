@@ -1,0 +1,26 @@
+{
+    "sourceFile": "src/lessons/11-interface.ts",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1631857655625,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1631857706296,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,7 +17,7 @@\n }\n console.log(kevin)\n \n const   helloPerson = (onePerson: Person)=>{\n-  console.log(`hello ${onePerson.name}`)\n+  console.log(`hello ${onePerson.speak('cho')}`)\n }\n helloPerson(kevin)\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1631857754128,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,7 +17,8 @@\n }\n console.log(kevin)\n \n const   helloPerson = (onePerson: Person)=>{\n-  console.log(`hello ${onePerson.speak('cho')}`)\n+  console.log(`hello ${onePerson.name}`)\n+  \n }\n helloPerson(kevin)\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1631857655625,
+            "name": "Commit-0",
+            "content": "interface Person{\nname: string,\nage: number,\nspeak(lang:string):void,\nspent(amount: number):number\n}\n\nconst kevin :Person = {\n  name:'kenvin',\n  age:12, \n  speak(text:string):void {\n    console.log(text)\n  },\n  spent(amt:number) {\n    return amt\n  }\n}\nconsole.log(kevin)\n\nconst   helloPerson = (onePerson: Person)=>{\n  console.log(`hello ${onePerson.name}`)\n}\nhelloPerson(kevin)"
+        }
+    ]
+}

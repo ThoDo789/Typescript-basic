@@ -1,0 +1,22 @@
+{
+    "sourceFile": "src/lessons/12-interface-with-class.ts",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1631868602682,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1631868692834,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,5 +24,10 @@\n   }\n }\n \n const documentOne:hasPrint = new Invoice('tho','coffee',2000)\n-const documentTwo:hasPrint = new Payment('thu','employee',2000)\n\\ No newline at end of file\n+const documentTwo:hasPrint = new Payment('thu','employee',2000)\n+\n+const allDocument:hasPrint[] = []\n+allDocument.push(documentOne,documentTwo) \n+\n+console.log(allDocument)\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1631868602682,
+            "name": "Commit-0",
+            "content": "interface hasPrint{\n  print():string\n}\n\n\nclass Invoice implements hasPrint {\n  constructor(\n    readonly client: string,\n    private work: string,\n    public amount: number\n  ){}\n  print(){\n    return `${this.client} owes ${this.amount} dollars for this work: ${this.work}`\n  }\n}\nclass Payment implements hasPrint{\n  constructor(\n    readonly recipient: string,\n    private job: string,\n    public amt: number\n  ){}\n  print(){\n    return `I owe ${this.recipient} ${this.amt} dollars for this work: ${this.job}`\n  }\n}\n\nconst documentOne:hasPrint = new Invoice('tho','coffee',2000)\nconst documentTwo:hasPrint = new Payment('thu','employee',2000)"
+        }
+    ]
+}

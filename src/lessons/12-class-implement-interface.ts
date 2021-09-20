@@ -1,0 +1,3 @@
+interface hasPrint{
+  print():string
+}
